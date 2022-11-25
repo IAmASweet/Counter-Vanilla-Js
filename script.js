@@ -8,11 +8,11 @@ const increment = () => {
   clickNumber.textContent = ++timesClicked
 }
 
+
 const decrement = () => {
   if (timesClicked > 0) {
     clickNumber.textContent = --timesClicked
   }
-  
 }
 
 
