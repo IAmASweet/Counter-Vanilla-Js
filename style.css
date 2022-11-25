@@ -1,0 +1,62 @@
+
+:root {
+  --very-peri: rgb(102, 103, 171);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  gap: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.number {
+  color: #FF8DC7;
+  font-size: 150px;
+  font-weight: 700;
+  padding-bottom: 10vh;
+}
+
+.btns { 
+  display: flex;
+  gap: 20px;
+  bottom: 10%;
+  position: absolute;
+  }
+  
+ .btn {
+   border: 0;
+   width: 150px;
+   height: 50px;
+   border-radius: 6px;
+   background-color: var(--very-peri);
+   color: inherit;
+   font-size: 24px;
+   font-family: inherit;
+ }
+ 
+ .btn:active {
+   transform: scale(0.98);
+ }
+
+ @media screen and (min-width: 750px) and (min-height: 700px) {
+    .btns {
+        gap: 50px;
+        bottom: 20%;
+    }
+
+    .number {
+        padding-bottom: 20vh;
+        font-size: 180px;
+    }
+ }
